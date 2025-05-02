@@ -145,7 +145,7 @@ export default function HomePage() {
   useEffect(() => {
     const fetchDoctors = async () => {
       try {
-        const res = await fetch('http://localhost:4000/api/doctors');
+        const res = await fetch('https://apolloassgn.onrender.com/api/doctors');
         const data = await res.json();
         console.log("Fetched doctors data:", data);
         setDoctors(data.doctors); // Important!

@@ -69,7 +69,7 @@ export default function AddDoctor({ closeForm }) {
         consultationFee: parseInt(formData.consultationFee) || 0,
       };
 
-      const res = await fetch('http://localhost:3000/api/doctors', {
+      const res = await fetch('https://apolloassgn.onrender.com/api/doctors', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
